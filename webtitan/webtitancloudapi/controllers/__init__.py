@@ -1,0 +1,5 @@
+from webtitancloudapi.controllers.users_api import UsersAPI
+from webtitancloudapi.controllers.locations_api import LocationsAPI
+from webtitancloudapi.controllers.globalBlacklist_api import GlobalBlacklistAPI
+from webtitancloudapi.controllers.cloudkey_api import CloudKeyAPI
+from webtitancloudapi.controllers.systemstats_api import SystemStatsAPI
