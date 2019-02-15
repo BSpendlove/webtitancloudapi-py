@@ -19,9 +19,10 @@ globalblacklist_api = webtitancloudapi.GlobalBlacklistAPI(webtitan=api)
 cloudkey_api = webtitancloudapi.CloudKeyAPI(webtitan=api)
 systemstats_api = webtitancloudapi.SystemStatsAPI(webtitan=api)
 
-
+ 
+pprint(user_api.get_all_accounts())
 #pprint(user_api.create_account('APITester','api@unitednet.co.uk','10','pa55w0rD!'))
 #pprint(location_api.update_location(1,'staticip',1,name='changednameviaapi'))
 #pprint(cloudkey_api.get_user_cloudkey(1, 30))
 #pprint(systemstats_api.get_system_top_users('allowed'))
-pprint(globalblacklist_api.update_global_blacklist_entry(17, comment='testapicomment'))
+#pprint(globalblacklist_api.update_global_blacklist_entry(17, comment='testapicomment'))
