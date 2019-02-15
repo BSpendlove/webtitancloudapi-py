@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-test",
+      "appliesTo": "webtitan/webtitancloudapi/test.py",
+      "type": "launch"
+    }
+  ]
+}
