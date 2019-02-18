@@ -4,7 +4,7 @@ from pprint import pprint
 from requests_oauthlib import OAuth1
 
 class webtitanAPI(object):
-    def __init__(self, server, consumer_key, consumer_secret, access_token, access_secret, ssl_verify=True):
+    def __init__(self, server, port, consumer_key, consumer_secret, access_token, access_secret, ssl_verify=True):
         self.server = server
         self.consumer_key = consumer_key
         self.consumer_secret = consumer_secret
@@ -12,7 +12,7 @@ class webtitanAPI(object):
         self.access_secret = access_secret
         self.ssl_verify = ssl_verify
         self.auth = OAuth1(consumer_key, consumer_secret, access_token, access_secret)
-        self.serverApiUrl = "https://%s:8443/restapi" %(server)
+        self.serverApiUrl = "https://%s:%s/restapi" %(server, port)
 
     def payloadBuilder(self, objmap=None, **kwargs):
         """ build the REST payload """

@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\webtitan",
-    "\\webtitan\\webtitancloudapi"
+    "\\webtitan\\webtitancloudapi",
+    "\\webtitan\\webtitancloudapi.egg-info",
+    "\\webtitan\\webtitancloudapi\\controllers"
   ],
-  "SelectedNode": "\\webtitan\\webtitancloudapi\\test.py",
+  "SelectedNode": "\\webtitan\\webtitancloudapi\\webtitan.py",
   "PreviewInSolutionExplorer": false
 }
