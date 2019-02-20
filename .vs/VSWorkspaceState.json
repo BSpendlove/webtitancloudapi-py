@@ -3,7 +3,6 @@
     "",
     "\\webtitan",
     "\\webtitan\\webtitancloudapi",
-    "\\webtitan\\webtitancloudapi.egg-info",
     "\\webtitan\\webtitancloudapi\\controllers"
   ],
   "SelectedNode": "\\webtitan\\webtitancloudapi\\webtitan.py",
