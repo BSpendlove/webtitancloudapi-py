@@ -1,2 +1,3 @@
 # webtitancloudapi-py
-Python API interface for TitanHQ - WebTitan filtering
+
+This small project is just a python API that queries the rest API for the WebTitan DNS filtering solution. This page will be updated in the future after I've finished all the APIs to configure categories, users, locations, etc...
