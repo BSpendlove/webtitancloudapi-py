@@ -1,5 +1,9 @@
 "test.py"
-"module1.py"
+"/.vs/"
+".vs/"
+"__pycache__"
+"__pycache__/"
 "testing_file_DONTUPLOAD.py"
 "/webtitancloudapi.egg-info/"
 /webtitan/webtitancloudapi/module1.py
+/webtitan/webtitancloudapi/test.py

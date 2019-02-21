@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{dcd10577-7243-40aa-9044-93b5a2117b42}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>webtitan\webtitancloudapi\test.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7-32</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="webtitan\setup.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\cloudkey_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\defaultPolicy_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\globalBlacklist_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\globalWhitelist_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\locations_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\systemstats_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\users_api.py" />
+    <Compile Include="webtitan\webtitancloudapi\controllers\__init__.py" />
+    <Compile Include="webtitan\webtitancloudapi\test.py" />
+    <Compile Include="webtitan\webtitancloudapi\webtitan.py" />
+    <Compile Include="webtitan\webtitancloudapi\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="webtitan" />
+    <Folder Include="webtitan\webtitancloudapi" />
+    <Folder Include="webtitan\webtitancloudapi\controllers" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7-32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

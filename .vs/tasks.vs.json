@@ -5,6 +5,21 @@
       "taskName": "task-test",
       "appliesTo": "webtitan/webtitancloudapi/test.py",
       "type": "launch"
+    },
+    {
+      "taskName": "task-webtitancloudapi-py",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-test",
+      "appliesTo": "webtitan/webtitancloudapi/test.py",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-webtitancloudapi-py",
+      "appliesTo": "/",
+      "type": "launch"
     }
   ]
 }
