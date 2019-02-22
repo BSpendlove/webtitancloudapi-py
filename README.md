@@ -213,26 +213,26 @@ Used to get all categories in a specific custom policy
 Used to get all categories in the customers default policy
 - account_id : Account ID that relates to the account
 
-### update_specific_customer_policy_category(account_id, policy_id, category_id, **kwargs
+### update_specific_customer_policy_category(account_id, policy_id, category_id, **kwargs)
 
 Used to update the specific category in a custom policy
 - account_id : Account ID that relates to the account
 - policy_id : Policy ID that relates to the custom Policy
 - category_id : Category ID that relates to the specific category
 
-### update_specific_customer_defaultpolicy_category(account_id, category_id, **kwargs
+### update_specific_customer_defaultpolicy_category(account_id, category_id, **kwargs)
 
 Used to update the specific category in the customers default policy
 - account_id : Account ID that relates to the account
 - category_id : Category ID that relates to the specific category
 
-### update_specific_customer_policy_allcategories(account_id, policy_id, **kwargs
+### update_specific_customer_policy_allcategories(account_id, policy_id, **kwargs)
 
 Used to update every category in the custom policy
 - account_id : Account ID that relates to the account
 - policy_id : Policy ID that relates to the custom Policy
 
-### update_specific_customer_defaultpolicy_allcategories(account_id, **kwargs
+### update_specific_customer_defaultpolicy_allcategories(account_id, **kwargs)
 
 Used to update every category in the customers default policy
 - account_id : Account ID that relates to the account
@@ -258,3 +258,29 @@ Used to get the top domains visited (can be filtered on date or date range)
 Used to get the top users (can be filtered on date or date range)
 - system_type : Allowed, Blocked or Bypassed
 
+## CustomerStatsAPI
+
+### get_customer_overview(account_id)
+
+Used to get an overview for a specific account/customer
+- account_id : Account ID that relates to the account
+
+### get_customer_top_categories(account_id, category_type)
+
+Used to get top categories accessed by a specific customer
+- account_id : Account ID that relates to the account
+- category_type : Allowed/Blocked or Bypassed
+
+### get_customer_top_domains(account_id, domain_type)
+
+Used to get top domains visited by a specific customer
+- account_id : Account ID that relates to the account
+- domain_type : Allowed/Blocked or Bypassed
+
+### get_customer_top_users(account_id, user_type)
+
+Used to get top internal users in a specific account/customer
+- account_id : Account ID that relates to the account
+- user_type : Allowed/Blocked or Bypassed
+
+## PolicyAPI
