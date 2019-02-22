@@ -81,3 +81,95 @@ Used to update a specific location assosicated to the WebTitan account
 - account_id : Account ID that relates to the account
 - location_type : Location type needs to be specified
 - location_id : Location ID that relates to the location
+
+## GlobalBlacklistAPI
+
+### create_global_blacklist(domain)
+
+Used to create a global blacklist entry that affects all accounts
+- domain : Example: bbc.co.uk or google.com
+
+### delete_global_blacklist(blacklist_id)
+
+Used to delete a global blacklist entry
+- blacklist_id : Blacklist ID that relates to the Blacklist entry
+
+### get_global_blacklist(blacklist_id)
+
+Used to get details of a specific global blacklist entry
+- blacklist_id : Blacklist ID that relates to the Blacklist entry
+
+### list_global_blacklist_entries
+
+Used to get every global Blacklist entry configured in WebTitan
+
+### update_global_blacklist_entry(blacklist_id, **kwargs)
+
+Used to update a specific global Blacklist entry
+- blacklist_id : Blacklist ID that relates to the Blacklist entry
+- kwargs can be found when listing the global blacklist (eg. incude subdomains...)
+
+## GlobalWhitelistAPI
+### create_global_whitelist_entry(domain)
+
+Used to create a global whitelist entry that affects all accounts
+- domain : Example: bbc.co.uk or google.com
+
+### delete_global_whitelist_entry(whitelist_id)
+
+Used to delete a global whitelist entry
+- whitelist_id : Whitelist ID that relates to the Whitelist entry
+
+### get_global_whitelist_entry(whitelist_id)
+
+Used to get details of a specific global whitelist entry
+- whitelist_id : Whitelist ID that relates to the Whitelist entry
+
+### list_global_whitelist_entries
+
+Used to get every global Whitelist entry configured in WebTitan
+
+### update_global_whitelist_entry(whitelist_id, **kwargs)
+
+Used to update a specific global Whitelist entry
+- whitelist_id : Whitelist ID that relates to the Whitelist entry
+- kwargs can be found when listing the global whitelist (eg. include subdomains...)
+
+## CloudKeyAPI
+
+### create_cloud_key(account_id, **kwargs)
+
+Used to create a cloud key for the specific WebTitan user
+- account_id : Account ID that relates to the account
+
+### delete_cloud_key(account_id, cloudkey_id)
+
+Used to delete a cloud key for the specific WebTitan user
+- account_id : Account ID that relates to the account
+- cloudkey_id : Cloudkey ID that relates to the Cloudkey
+
+### get_user_cloudkey(account_id, cloudkey_id)
+
+Used to get specific details about a specific cloudkey
+- account_id : Account ID that relates to the account
+- cloudkey_id : Cloudkey ID that relates to the Cloudkey
+
+### get_user_cloudkeys(account_id)
+
+Used to list all details about a users cloudkey
+- account_id : Account ID that relates to the account
+
+## DefaultPolicyAPI
+
+### get_default_specific_filtercategory(categoryid)
+
+Used to get specific details on a filter category that exist in the default policy
+- categoryid : Category ID that relates to the specific Category (can be found via get_default_filtering_policy_categories())
+
+### get_default_filtering_policy
+
+Used to get specific details about the policy itself (not categories) such as: safesearch enabled? Email notificiations enabled?
+
+### get_default_filtering_policy_categories
+
+Used to get all categories of the default filtering policy
