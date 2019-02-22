@@ -173,3 +173,88 @@ Used to get specific details about the policy itself (not categories) such as: s
 ### get_default_filtering_policy_categories
 
 Used to get all categories of the default filtering policy
+
+### update_default_specific_filtercategory(categoryid, **kwargs)
+
+Used to update a specific category in the default policy (eg. Allow = True/False)
+- categoryid : Category ID that relates to the specific Category
+
+### update_default_filtering_policy
+
+Used to update the default filtering policy
+
+### update_all_default_filtercategories
+
+Used to update every default filter category
+
+## CategoryAPI
+
+### get_specific_customer_policy_category(account_id, policy_id, category_id)
+
+Used to get a specific custom policy category
+- account_id : Account ID that relates to the account
+- policy_id : Policy ID that relates to the custom Policy
+- category_id : Category ID that relates to the specific category
+
+### get_specific_customer_defaultpolicy_category(account_id, category_id)
+
+Used to get specific category in the customers default policy
+- account_id : Account ID that relates to the account
+- category_id : Category ID that relates to the specific category
+
+### get_specific_customer_policy_categories(account_id, category_id)
+
+Used to get all categories in a specific custom policy
+- account_id : Account ID that relates to the account
+- category_id : Category ID that relates to the specific category
+
+### get_specific_customer_defaultpolicy_categories(account_id)
+
+Used to get all categories in the customers default policy
+- account_id : Account ID that relates to the account
+
+### update_specific_customer_policy_category(account_id, policy_id, category_id, **kwargs
+
+Used to update the specific category in a custom policy
+- account_id : Account ID that relates to the account
+- policy_id : Policy ID that relates to the custom Policy
+- category_id : Category ID that relates to the specific category
+
+### update_specific_customer_defaultpolicy_category(account_id, category_id, **kwargs
+
+Used to update the specific category in the customers default policy
+- account_id : Account ID that relates to the account
+- category_id : Category ID that relates to the specific category
+
+### update_specific_customer_policy_allcategories(account_id, policy_id, **kwargs
+
+Used to update every category in the custom policy
+- account_id : Account ID that relates to the account
+- policy_id : Policy ID that relates to the custom Policy
+
+### update_specific_customer_defaultpolicy_allcategories(account_id, **kwargs
+
+Used to update every category in the customers default policy
+- account_id : Account ID that relates to the account
+
+## SystemStatsAPI
+
+### get_system_overview(**kwargs)
+
+Used to get an overview of things such as total DNS requests, total domains allowed/blocked... Use kwargs from the Rest API documentation on apidoc.webtitancloud.com for optional parameters to filter on dates etc.. or get a date range
+
+### get_system_top_categories(system_type)
+
+Used to get top categories accessed
+- system_type : Allowed, Blocked or Bypassed
+
+### get_system_top_domains(system_type)
+
+Used to get the top domains visited (can be filtered on date or date range)
+- system_type : Allowed, Blocked or Bypassed
+
+### get_system_top_users(system_type)
+
+Used to get the top users (can be filtered on date or date range)
+- system_type : Allowed, Blocked or Bypassed
+
