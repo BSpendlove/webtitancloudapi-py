@@ -4,4 +4,8 @@ from webtitancloudapi.controllers.globalBlacklist_api import GlobalBlacklistAPI
 from webtitancloudapi.controllers.globalWhitelist_api import GlobalWhitelistAPI
 from webtitancloudapi.controllers.cloudkey_api import CloudKeyAPI
 from webtitancloudapi.controllers.defaultPolicy_api import DefaultPolicyAPI
+from webtitancloudapi.controllers.category_api import CategoryAPI
 from webtitancloudapi.controllers.systemstats_api import SystemStatsAPI
+from webtitancloudapi.controllers.customerstats_api import CustomerStatsAPI
+from webtitancloudapi.controllers.policy_api import PolicyAPI
+from webtitancloudapi.controllers.internalusers_api import InternalUsersAPI
