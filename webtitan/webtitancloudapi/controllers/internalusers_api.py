@@ -26,7 +26,7 @@ class InternalUsersAPI(object):
         req = self.webtitan.query(apiUrl, method=requests.get)
         return(req)
 
-    def update_internal_user_policy(self, account_id, userid):
+    def update_internal_user_policy(self, account_id, userid, **kwargs):
         #http://apidoc.webtitancloud.com/#api-Internalusers-PostRestapiUsersIdUsersUserid
         payload = {
             'id' : account_id,
